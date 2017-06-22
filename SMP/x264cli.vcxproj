@@ -60,6 +60,11 @@
     <ClCompile Include="..\output\raw.c" />
     <ClCompile Include="..\x264.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libx264.vcxproj">
+      <Project>{20179127-853b-4fe9-b7c0-9e817e6a3a72}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DF0E4003-C938-4CE6-A06A-F7741512B46C}</ProjectGuid>
     <RootNamespace>x264cli</RootNamespace>
