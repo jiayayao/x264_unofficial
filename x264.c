@@ -1916,9 +1916,10 @@ static void parse_qpfile( cli_opt_t *opt, x264_picture_t *pic, int i_frame )
         }
     }
 }
-
 static int encode_frame( x264_t *h, hnd_t hout, x264_picture_t *pic, int64_t *last_dts )
 {
+    // x264_picture_t：存储压缩编码前的像素数据
+    // x264_nal_t：存储压缩编码后的码流数据
     x264_picture_t pic_out;
     x264_nal_t *nal;
     int i_nal;
